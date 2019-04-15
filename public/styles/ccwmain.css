@@ -1,0 +1,558 @@
+
+  /*  font-family: 'OpenSansRegular', Arial, Helvetica, sans-serif;  */
+
+
+
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+html {
+    height: 100%;
+}
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+    }
+
+header img {
+    float: left;
+    height: 90px;
+    width: auto;
+    padding-right: 10px; 
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+    background-image: url(../images/background2.jpg); 
+	font-size:0.825em;
+	color:#fcfcfc;
+	font-family:Arial, Helvetica, sans-serif;
+    width: 90%;
+    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+#body_culture, #body_calligraphy, #body_notfound{
+    width: 110%;
+    background-image: url(../images/background3.jpg)
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	text-align: center;
+	border: 2px solid #04142d;
+    border-radius: 10px;
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	font-weight: bolder;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:2em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:1.5em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+h2{
+	font-size:1.8em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+.go_up {
+	float: right; 
+	padding-right: 1.5%;  
+}
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+.pbold{
+	font-size:1.2em;
+	font-weight:bold;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#24404c;
+	border-bottom:1px solid #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+/*.logo img{
+    float: left;
+    border: none;
+    width: 10%;
+    height: 8%;
+margin-top: 2px;
+}
+.iconheading1 {
+ position: relative;
+} */
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color: #04142d; 
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+#nav_menu, article, #nav_menu ul li a, #nav_menu ul ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+/* The navigation styling: */
+#nav_menu{
+    width: 100%;
+	padding: 5px;
+    margin: 0 auto;
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+  }
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 23.5%; 
+    padding: 0.5%;
+    align-items: center;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 0.7em 0;
+    text-decoration: none;
+    color: white;
+    background: #001a33; 
+    font-size:1.25em;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#nav_menu ul ul a{
+    background: #001a5f; 
+    padding:0;
+    border: 1px solid #001a5f;
+}
+
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+	width: 95%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+    padding: 2px;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+    
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.slicknav_menu {
+	display: none;
+}
+
+/* Article styles: */
+#page{
+	width:90%;
+	margin:0 auto;
+	position:relative;
+}
+
+#message{        /*   for not-found page   */
+    margin-top: 7em;
+    text-align: center;
+}
+
+article{
+    clear:both;
+	background-color: #04142d; 
+	margin:3em 0;
+	padding:2%;
+	text-shadow:0 2px 0 black;
+    border: 1px solid #04142d; 
+    border-radius: 10px;
+}
+
+/* for culture page, 2 columns  */
+#columnsculture{
+    width: 98%;
+    padding:5px;
+    margin: 0 auto;
+}
+
+}
+
+         /* calligraphy page, 3 columns */
+
+#h1-span {
+    font-size: 2em;
+    column-span: all;
+    padding-left: 1%;
+    }
+
+.column3calligraphy img {
+    
+    float: left;
+    width: 90%;
+    height: auto;
+    padding: 2.5%; 
+    border:1px solid #FCFCFC;
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#sidebarA {
+    width: 31%;
+    float: left;
+    padding: 1%;
+}
+
+#calligraphymain {
+    width: 31%;
+    float: left;
+    padding: 1%;
+}
+
+#sidebarB {
+    width: 31%;S
+    float: left;
+    padding: 1%;
+}
+
+.column3calligraphy {
+    width: 98%;
+	padding:5px;
+    margin: 0 auto;
+}
+
+
+figure{
+	border:3px solid #142830;
+	float:right;
+	height:27%;
+	margin-left:1.5%;
+	overflow:hidden;
+	width:52%;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+main {
+    width: 43%;
+    height:auto;
+    float: left;
+    padding: 1%;
+}
+main img {
+    
+    float: left;
+    width: 20%;
+    height: auto;
+    padding: 5px; 
+    
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+    margin: 5px;
+    border:1px solid #FCFCFC;
+	box-shadow:0 1px 1px #333333;
+    border-radius: 5px;
+}
+
+/* side column: */
+
+aside {
+    width: 52%;
+    height:auto;
+    float: right;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+aside img {
+    align-content: center;
+    width: 95%;
+    height: auto;
+    padding: 5px; 
+    -moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+    margin: 5px;
+    border:1px solid #FCFCFC;
+	box-shadow:0 1px 1px #333333;
+    border-radius: 5px;
+}
+
+
+figcaption {
+    margin-left: 20px;
+    padding-bottom: 2px;
+    font-size: 1.5em;
+}
+
+#poptable {
+    margin-right: 0;
+    float: right;
+    padding: 7px;
+    border: 1px solid #001a5f;
+    width: 95%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 5px solid #001a5f;
+    }
+
+th, td {
+    border: 3px solid #001a5f;
+    padding: .2em .7em;
+    text-align: center; 
+    font-size: 1.4em;}
+
+tr td:nth-child(2), tr td:nth-child(3) {
+    text-align: right;
+} 
+
+th.left, td.left { text-align: left; }
+thead, tfoot { background-color: #001a5f; }
+tfoot { font-weight: bold; }
+th.right {text-align: right; }
+
+.slivknav_menu {
+    display: none;
+}
+
+/* Footer styling: */
+
+footer .line{
+	margin:0;
+}
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+#footer {
+    
+    position: relative;
+    height: 40px;
+}
+
+footer{
+    clear: both;
+    margin-bottom:20px;
+	font-size:0.825em;
+    display:block;
+    column-span: all;
+    position: relative;
+    height: 15px;
+    width: 20%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 40%;
+    vertical-align: center;
+    text-align: center;
+    align-content: center;  /* padding-left: 40%;*/
+    border: 1px solid black;
+    margin-top: -40px;
+}
+footer a {
+    
+    border: none;
+}
+
+footer a:visited{
+	color:#cccccc;
+	background-color:#213e4a;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:#142830;
+}
+
+footer a.by{
+	float:left;
+}
+
+footer a.up{
+	float:right;
+}
+
+/* hide the mobile menu initially */
+/*#mobile_menu {
+    display: none;
+}*/
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+    #nav_menu ul li a { font-size: .875em; }  /* 14 ÷ 16 */
+    section h1, article h1 { font-size: 1.5em; }
+                                              /* 24 ÷ 16 */
+    section h2, aside h2 { font-size: 1.125em; }
+                                              /* 18 ÷ 16 */
+}
+
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+    #nav_menu { display: none; }
+    .slicknav_menu {
+	display: block;
+    float: right;
+    margin-right: 20px;    
+}
+    
+    .slicknav_menu {
+        background-color: #04142d !important; }
+    body {
+        width: 100%;             /* full width of screen */
+        margin: 0;               /* no margins */
+        border: none;            /* no border */
+    }   
+    header, footer p { text-align: center; }
+    footer p { margin-right: 0; }
+    header h2 {
+        font-size: 1.625em;            /* 26 ÷ 16 */
+        margin: .4em 0 .25em 0;
+    }
+    header h3 {
+        font-size: 1em;                /* base font size */
+        margin-left: 0;
+    }
+    /* mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px) {
+#sidebarA, #calligraphymain{
+    margin: 0;  
+    width: 40%;  
+    padding-left: 0%;
+    padding-right: 5%;}
+ #sidebarB {
+    clear: both;    
+    width: 90%;   
+    padding: 5%;
+}
+
+    
+    /* mobile portrait layout (<480px) */
+@media only screen and (max-width: 479px) {
+
+    #sidebarA, #calligraphymain, #sidebarB, main, aside {
+    clear: both;    
+    width: 90%;   
+    padding: 5%;
+}
+
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*
+@media only screen and (min-width: 480px)
+                   and (max-width: 767px) {...}
+/* tablet landscape and desktop layout (960px or more) */
+/*...tablet landscape and desktop styles go here */
+ 
+/* tablet portrait layout (768px to 959px) */
+/*@media only screen and (max-width: 959px) {
+    ...tablet portrait styles go here}
+ 
+/* mobile landscape layout (480px to 767px) */
+/*@media only screen and (max-width: 767px) {
+    ...mobile landscape styles go here}
+ 
+/* mobile portrait layout (479px or less) */
+/*@media only screen and (max-width: 479px) {
+    ...mobile portrait styles go here}
+
+
+/* hide the mobile menu */
+/* #mobile_menu { display: none; }
+    
+.
+.
+/* display the mobile menu */
+/* #mobile_menu { display: block; }   */
